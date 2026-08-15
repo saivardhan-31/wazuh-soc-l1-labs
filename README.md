@@ -1,0 +1,1 @@
+# wazuh-soc-l1-labs
