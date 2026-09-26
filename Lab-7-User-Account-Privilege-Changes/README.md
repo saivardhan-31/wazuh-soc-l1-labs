@@ -32,6 +32,7 @@ This lab helped me practice:
 ---
 
 ## Lab Architecture
+```text
 Kali Linux
     |
     | User account activity
