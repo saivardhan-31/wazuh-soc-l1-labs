@@ -133,9 +133,9 @@ Rule ID	31164
 Level	6
 Description	SQL injection attempt
 MITRE ATT&CK	T1055, T1190
-Alert Analysis
+## Alert Analysis
 
-## The Wazuh alert confirms that:
+The Wazuh alert confirms that:
 
 Apache received the HTTP request.
 The request was written to access.log.
@@ -153,28 +153,28 @@ T1190 — Exploit Public-Facing Application
 These mappings are provided by the Wazuh rule associated with the alert.
 
 ## SOC L1 Investigation
-Initial Triage
-Alert: SQL injection attempt
-Severity: Level 6
-Source: Apache access log
-Source IP: 127.0.0.1
-Requested URL: /?id=%27
-Affected Service: Apache HTTP Server
+1.Initial Triage
+2.Alert: SQL injection attempt
+3.Severity: Level 6
+4.Source: Apache access log
+5.Source IP: 127.0.0.1
+6.Requested URL: /?id=%27
+7.Affected Service: Apache HTTP Server
 ## Investigation Steps
-Review the Wazuh alert.
-Identify the source IP.
-Examine the requested URL.
-Verify the original Apache access-log entry.
-Check the Wazuh rule and decoder.
-Determine whether the activity was authorized or malicious.
-Document the event and evidence.
+1.Review the Wazuh alert.
+2.Identify the source IP.
+3.Examine the requested URL.
+4.Verify the original Apache access-log entry.
+5.Check the Wazuh rule and decoder.
+6.Determine whether the activity was authorized or malicious.
+7.Document the event and evidence.
 ## Classification
-Category: Web Attack
-Attack Type: SQL Injection
-Detection Source: Apache access logs
-Wazuh Rule: 31164
-Alert Level: 6
-Environment: Controlled SOC lab
+1.Category: Web Attack
+2.Attack Type: SQL Injection
+3.Detection Source: Apache access logs
+4.Wazuh Rule: 31164
+5.Alert Level: 6
+6.Environment: Controlled SOC lab
 
 The activity was intentionally generated for security monitoring and detection testing.
 
