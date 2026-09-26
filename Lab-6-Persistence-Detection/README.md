@@ -33,6 +33,7 @@ This lab helped me practice:
 ---
 
 ## Lab Architecture
+```text
 Kali Linux
     |
     | Cron persistence configuration
